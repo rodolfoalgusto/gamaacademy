@@ -55,3 +55,19 @@ li a {
 	position: relative;
 	top: 1px;
 }
+
+.text-form {
+        margin: 0rem;
+        padding-top: 5rem;
+        padding-right:10rem;
+        padding-left: 10rem;
+        padding-bottom: 5rem;
+}
+
+input{
+    color: #0E1221;
+    font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+	padding: 12px 20px;
+	text-decoration: none;
+}
