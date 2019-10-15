@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 h1 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
@@ -98,11 +106,15 @@ li a {
 }
 
 .text-form {
-        margin: 0rem;
-        padding-top: 5rem;
-        padding-right:10rem;
-        padding-left: 10rem;
-        padding-bottom: 5rem;
+    max-width: 1200px;  
+    margin: 0 auto !important;
+    padding: 50px !important;
+}
+
+@media screen and (min-width: 500px) {
+  .text-form {
+    margin: 0 auto;
+    padding: 20px;
 }
 
 input{
