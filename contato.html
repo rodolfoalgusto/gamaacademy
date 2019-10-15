@@ -30,47 +30,58 @@
 
 
 
-    <!-- Navigation --> <!-- barra de menu-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navigation -->
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"> [nome do blog] </nome></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <a class="navbar-brand" href="#">NaNuvem</nome></a> -->
+          <img src="./img/NaNuvem.svg" id="logo" alt="">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="índex.html">Home
                             <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Sobre</a>
                         </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+            </div>          
+            
         </div>
-    </nav>
-                    <!-- fim da barra de menu -->
+</nav>
+    
+
+    <!-- fim da barra de menu -->
 
 
-    <div class="contact">
-    <div class="box">
-        <button class="btn"><h3>CLIQUE AQUI!</h3></button>
+    <div class="img">
+        <img src="img/postagem-principal.jpg" alt="">
     </div>
-   
-    </div>
+
+    <form class="formulario">
+
+        <fieldset id="campo">
+            <h1></h1><input type="text" name="tname" id="cname" >
+            <h1></h1><input type="email" name="tmail" id="cmail" >
+        </fieldset>
+        
+        <fildset>
+            <h1 class="m">Mensagem</h1><input  class="mensagem" type="mesage" name="tmesage" id="cmesage">
+        </fildset>
+    </form>
 
 
 
 
-
-                <!-- rodape -->
+    <!-- rodape -->
     <footer class="page-footer font-small bg-dark pt-4 colo">
 
         <div class="footer-copyright text-center py-3 text-white">
@@ -84,7 +95,14 @@
                         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     </footer>
-                     <!-- fim do rodape -->
+    <!-- fim do rodape -->
 
+
+
+    <script type="text/javascript" src="//code.jquary.com/jquery-1.11.0.min.js"></script> 
+
+    <script type="text/javascript" src="/LosPerdidos-master/jquery/jquery.js"></script>
 
 </body>
+
+</html>
