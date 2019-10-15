@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #303052;
+}
+
+.contact{
+    width: 100%;
+    height: 578px;
+    background: #cccc;
+    margin: 0;
+    padding: 0px;
+}
+
+.contact .box{
+    width: 500px;
+    height: 370px;
+    background: rgb(109, 98, 98);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    background: orange;
+    border-radius: 25%;
+
+    
+}
+
+.box .h3{
+    font-size: 16px;
+}
