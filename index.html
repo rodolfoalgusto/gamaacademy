@@ -20,11 +20,21 @@
 
 </head>
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.2.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-              <a class="navbar-brand" href="#"> [nome do blog] </nome></a>
+              <!-- <a class="navbar-brand" href="#">NaNuvem</nome></a> -->
+              <img src="./img/NaNuvem.svg" id="logo" alt="">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -39,7 +49,7 @@
                                 <a class="nav-link" href="#">Sobre</a>
                             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="./contato.html">Contato</a>
                             </li>
                         </ul>
                 </div>          
@@ -57,21 +67,21 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./img/Princesa.JPG" class="d-block w-100" alt="...">
+                  <img src="./img/post-mulheres-tecnologia.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h2>First slide label</h2>
                     <h3>Nulla vitae elit libero, a pharetra augue mollis interdum.</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/Princesa.JPG" class="d-block w-100" alt="...">
+                  <img src="./img/TESTE.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h2>Second slide label</h2>
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/Princesa.JPG" class="d-block w-100" alt="...">
+                  <img src="./img/TESTE.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h2>Third slide label</h2>
                     <h3>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h3>
@@ -94,20 +104,20 @@
         <div class="row text-left">
                 <div class="col-lg-8">
                     <div class="card">
-                        <img class="card-img-top" src="./img/Princesa.JPG">
+                        <img class="card-img-top" src="./img/postagem-principal.jpg">
                             <div class="card-body">
-                                <h4 class="card-title">Post Principal</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                                    <div class="card-footer">
+                                <h4 class="card-title">Como tornar o mercado da tecnologia mais inclusivo e diverso?</h4>
+                                <p class="card-text">Visando a demanda do mercado, diversos projetos nasceram nos últimos anos com a missão de deixar o mercado de tecnologia mais inclusivo.. <a href="#" class="link">Ler mais</a></p> 
+                                    <!-- <div class="card-footer">
                                         <a href="#" class="btn-style">Ler mais</a>
-                                    </div>
+                                    </div> -->
                             </div>
                     </div>
                 </div>
     
                 <div class="col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="./img/Princesa.JPG">
+                        <img class="card-img-top" src="./img/na-nuvem.jpg">
                             <div class="card-body">
                                 <h4 class="card-title">Sobre a NaNuvem</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
@@ -120,7 +130,7 @@
         </div>
     </section>
 
-    <!--Cards 01-->
+    <!-- Cards 01
     <div class="cards">
         <div class="row text-left">
             <div class="col-lg-4">
@@ -165,7 +175,7 @@
         </div>
     </div>
 
-    <!--Cards 02-->
+    Cards 02
     <div class="cards">
             <div class="row text-left">
                 <div class="col-lg-4">
@@ -210,10 +220,16 @@
             </div>
         </div>
 
-    <!--Form-->
+        <br>
+        <br>
+        <br>
+
+
+     Form -->
     <section class="text-form">
-        <h1>Definir o label aqui!</h1>  
-            <form method="POST" action="https://formspree.io/losperdidosgame@gmail.com">
+        <h5>Se inscreva na nossa newsletter!</h5>  
+        <br>
+            <form method="POST" action="https://formspree.io/losperdidosgama@gmail.com">
                 <div class="form-row">
                 <div class="col">
                     <input type="name" class="form-control" name="name" placeholder="Nome completo">
@@ -226,9 +242,14 @@
             </form>
     </section>
 
+    <br>
+    <br>
+    <br>
+
+
     <footer class="page-footer font-small bg-dark pt-4 colo">
             <div class="footer-copyright text-center py-3 text-white">
-                <p class="p-footer">Colocar alguma coisa aqui, @hipsters? Criamos alguma rede social, será?</p>
+                <!-- <p class="p-footer">Colocar alguma coisa aqui, @hipsters? Criamos alguma rede social, será?</p> -->
 
                 <p class="p-footer">Feito com amor por #losperdidos <span><3</span> ©2019 Copyright</p>
             </div>      
