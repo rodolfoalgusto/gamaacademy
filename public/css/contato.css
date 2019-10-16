@@ -1,36 +1,75 @@
 *{
     margin: 0;
     padding: 0;
-    background: #303052;
-}
-
-.contact{
-    width: 100%;
-    height: 578px;
-    background: #cccc;
-    margin: 0;
-    padding: 0px;
-}
-
-.contact .box{
-    width: 500px;
-    height: 370px;
-    background: rgb(109, 98, 98);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     
 }
 
-.btn{
-    width: 60px;
-    height: 60px;
-    background: orange;
-    border-radius: 25%;
-
-    
+body{
+   font-family:'Work Sans', sans-serif;
 }
 
-.box .h3{
-    font-size: 16px;
+.formulario{
+    background: #ffffff;
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;    
+}
+
+ .formulario fieldset{
+    background: rgb(143, 57, 57);
+    border: 0 none;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    text-align: center;
+     
+    box-shadow: 0 0 15px 1px rgba(red, green, blue, alpha);
+    padding: 20px auto;  
+} 
+
+#campo input{
+    background: chartreuse;
+    margin: 10px auto;
+    padding: 20px auto;
+    height: 20px;
+    position: relative;
+    text-align: center;
+   
+
+   
+}
+
+/* mensagem box */
+.mensagem{
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    border: none;
+    background: rgb(229, 227, 241);
+}
+
+/* mensagem h1 */
+.m{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(68, 68, 67);
+    position: relative;
+    left: -150px;
+
+}
+
+
+
+/* imagem */
+
+.img{
+    text-align: center;
+    margin: 35px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
