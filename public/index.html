@@ -41,12 +41,9 @@
                   <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="índex.html">Home
+                                <a class="nav-link" href="index.html">Home
                                 <span class="sr-only">(current)</span>
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./contato.html">Contato</a>
@@ -198,7 +195,7 @@
             <div class="col">
                 <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
                 <input type="hidden" name="ip" id="ip" value="" />
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/LosPerdidos-master/public/thanks.html">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/LosPerdidos/public/thanks.html">
             </div>
             <button class="btn-style" type="submit">Enviar</button>
             </div>
@@ -230,17 +227,6 @@
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>
-        $(function() {
-            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-            function(json) {
-                //console.log("Meu IP público é: ", json.ip);
-                $('#ip').val(json.ip);
-            });
-        });
-    </script>
     
     
 </body>

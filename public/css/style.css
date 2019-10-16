@@ -120,6 +120,10 @@ li a {
     padding: 15px !important;
 }
 
+.card-body {
+    padding: 5.25rem !important;
+}
+
 .btn-style {
 	background-color: #7048b1;
 	border-radius: 5px;
@@ -129,12 +133,15 @@ li a {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 15px;
 	padding: 6px 20px;
-	text-decoration: none;
+	text-decoration: none;  
 }
+
 .btn-style:hover {
 	background-color :#835fbd;
 }
+
 .btn-style:active {
+    color: #ffffff !important; 
 	position: relative;
 	top: 1px;
 }
