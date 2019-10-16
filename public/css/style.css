@@ -32,10 +32,18 @@ h4 {
 
 h5 {
     font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
+    font-weight: 800 !important;
     font-size: 1.5rem !important;
     color: #0E1221;
 }
+
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem !important;
+    color: #0E1221;
+}
+
 
 p {
     font-family: 'Work Sans', sans-serif;
@@ -83,6 +91,10 @@ li a {
     color: #fff;
 }
 
+/* a:hover {
+    background-color: #835fbd !important;
+} */
+
 .feature-texto {
     max-width: 1200px;  
     margin: 30px auto !important;
@@ -91,7 +103,7 @@ li a {
 
 @media screen and (min-width: 320px) {
   .feature-texto {
-    margin: 0 auto !important;
+    margin: 20px auto !important;
     padding: 15px !important;
 }
     
@@ -110,13 +122,13 @@ li a {
 
 .btn-style {
 	background-color: #7048b1;
-	border-radius: 24px;
+	border-radius: 5px;
 	display: inline-block;
 	cursor: pointer;
 	color: #ffffff;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 15px;
-	padding: 12px 20px;
+	padding: 6px 20px;
 	text-decoration: none;
 }
 .btn-style:hover {
@@ -140,12 +152,12 @@ li a {
     /* display: flex; */
 }
 
-input{
-    color: #0E1221;
-    font-family: 'Work Sans', sans-serif;
-	font-size: 15px;
-	padding: 12px 20px;
-	text-decoration: none;
+.form-control{
+    color: #0E1221 !important;
+    font-family: 'Work Sans', sans-serif !important;
+	font-size: 15px !important;
+	padding: 12px 20px !important;
+    text-decoration: none !important;
 }
 
 .card-footer {
@@ -154,5 +166,8 @@ input{
     border-top: 1px solid rgba(0,0,0,.125);
     display: flex;
     flex-wrap: wrap;
+}
 
+.navbar-toggler {
+    color: #0E1221 !important;
 }
