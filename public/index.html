@@ -183,72 +183,38 @@
         </div>
     </div>
 
-    <!-- Cards 02
-    <div class="cards">
-            <div class="row text-left">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="./img/Princesa.JPG">
-                            <div class="card-body">
-                                <h4 class="card-title">Um postzinho</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                                    <div class="card-footer">
-                                        <a href="#" class="btn-style">Ler mais</a>
-                                    </div>
-                            </div>
-                    </div>
-            </div>
+    <br>
     
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="./img/Princesa.JPG">
-                            <div class="card-body">
-                                <h4 class="card-title">Outro postzinho</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                                    <div class="card-footer">
-                                        <a href="#" class="btn-style">Ler mais</a>
-                                    </div>
-                            </div>
-                    </div>
-                    
-                </div>
-    
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="./img/Princesa.JPG">
-                            <div class="card-body">
-                                <h4 class="card-title">Mais um e chega (?)</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                                    <div class="card-footer">
-                                        <a href="#" class="btn-style">Ler mais</a>
-                                    </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <br>
-        <br> -->
-
-
     <!-- Form -->
+    
     <section class="text-form">
         <h5>Se inscreva e receba conteúdos exclusivos!</h5>  
         <br>
-            <form action="https://formsubmit.co/losperdidosgama@gmail.com" method="POST">
-                <div class="form-row">
-                <div class="col">
-                    <input type="name" class="form-control" name="name" placeholder="Nome completo">
-                </div>
-                <div class="col">
-                    <input type="email" class="form-control" name="email" placeholder="Seu e-mail">
-                </div>
-                <button class="btn-style" type="submit">Enviar</button>
-                </div>
-            </form>
+        <form action="https://formsubmit.co/losperdidosgama@gmail.com" method="POST">
+            <div class="form-row">
+            <div class="col">
+                <input type="name" class="form-control" name="name" placeholder="Nome completo">
+            </div>
+            <div class="col">
+                <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
+                <input type="hidden" name="ip" id="ip" value="" />
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/LosPerdidos-master/public/thanks.html">
+            </div>
+            <button class="btn-style" type="submit">Enviar</button>
+            </div>
+        </form>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+                //console.log("Meu IP público é: ", json.ip);
+                $('#ip').val(json.ip);
+            });
+        });
+    </script>
 
     <br>
     <br>
@@ -260,10 +226,21 @@
                 <p class="p-footer">©2019 Copyright</p>
             </div>      
     
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+                //console.log("Meu IP público é: ", json.ip);
+                $('#ip').val(json.ip);
+            });
+        });
+    </script>
     
     
 </body>

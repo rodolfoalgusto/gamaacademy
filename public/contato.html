@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nome do blog</title>
+    <title>Contato</title>
 
     <link rel="stylesheet" type="text/css" href="./css/contato.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -35,7 +35,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
           <!-- <a class="navbar-brand" href="#">NaNuvem</nome></a> -->
-          <img src="./img/NaNuvem.svg" id="logo" alt="">
+          <div> <img src="./img/NaNuvem.svg"  id="logo" alt=""></div>
+        
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -57,29 +59,30 @@
             
         </div>
 </nav>
-    
-
     <!-- fim da barra de menu -->
 
+    <!-- formulario -->
 
     <div class="img">
-        <img src="img/postagem-principal.jpg" alt="">
+       <p>Fale com <br>a gente ;)</p> <img src="img/postagem-principal.jpg" alt="">
     </div>
 
-    <form class="formulario">
+    <section class="content">
+        <div class="contato">
+            <form class="form" method="post" action="">
+                <h1>Nome</h1><input  class="field" name="nome" placeholder="Digite seu nome" height="10px">
+                <h1>E-mail</h1><input  class="field" name="email" placeholder="Digite seu e-mail">
+                <h1>Mensagem</h1><textarea class="field" name="mesage" id="#" cols="30" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+                
+                <button id="btn">enviar</button>
+                <!-- <input class="btn" type="submit" value="Enviar"> -->
+                
+            </form>
+        </div>
+    </section>
 
-        <fieldset id="campo">
-            <h1></h1><input type="text" name="tname" id="cname" >
-            <h1></h1><input type="email" name="tmail" id="cmail" >
-        </fieldset>
-        
-        <fildset>
-            <h1 class="m">Mensagem</h1><input  class="mensagem" type="mesage" name="tmesage" id="cmesage">
-        </fildset>
-    </form>
-
-
-
+    
+    <!-- formulario -->
 
     <!-- rodape -->
     <footer class="page-footer font-small bg-dark pt-4 colo">
@@ -99,7 +102,7 @@
 
 
 
-    <script type="text/javascript" src="//code.jquary.com/jquery-1.11.0.min.js"></script> 
+    <!-- <script type="text/javascript" src="//code.jquary.com/jquery-1.11.0.min.js"></script> -->
 
     <script type="text/javascript" src="/LosPerdidos-master/jquery/jquery.js"></script>
 
