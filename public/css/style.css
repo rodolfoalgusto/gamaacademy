@@ -73,6 +73,10 @@ p {
 
 }
 
+.carousel-item{
+    padding-top: 50px !important;
+}
+
 .card-text {
     font-family: 'Work Sans', sans-serif;
     font-weight: 100 !important;
