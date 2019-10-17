@@ -189,6 +189,17 @@
     <br>
     <br>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+                //console.log("Meu IP público é: ", json.ip);
+                $('#ip').val(json.ip);
+            });
+        });
+    </script>
+
     <footer class="page-footer font-small bg-dark pt-4 colo">
             <div class="footer-copyright text-center py-3 text-white">
                     <p class="p-footer">©2019 Copyright</p>
