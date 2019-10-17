@@ -128,6 +128,11 @@ li a {
     padding: 5.25rem !important;
 }
 
+.card-body{
+    padding: 1.25rem !important;
+
+}
+
 .btn-style {
 	background-color: #7048b1;
 	border-radius: 5px;
