@@ -203,7 +203,7 @@
             </div>
             <div class="col">
                 <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
-                <input type="hidden" name="datetime" id="datetime" value="">
+                <!-- <input type="hidden" name="datetime" id="datetime" value=""> -->
                 <input type="hidden" name="ip" id="ip" value="" />
                 <input type="hidden" name="_next" value="https://nanuvem.tech/thanks.html">
             </div>
@@ -225,13 +225,13 @@
             });
         });
 
-        $(function() {
-            $.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=FS7HRHC3ZSQP&format=xml&by=zone&zone=America/Sao_Paulo",
-            function(json) {
-                //console.log("Meu IP público é: ", json.ip);
-                $('#datetime').val(json.time);
-            });
-        });
+        // $(function() {
+        //     $.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=FS7HRHC3ZSQP&format=xml&by=zone&zone=America/Sao_Paulo",
+        //     function(json) {
+        //         //console.log("Meu IP público é: ", json.ip);
+        //         $('#datetime').val(json.time);
+        //     });
+        // });
         
     </script>
 
