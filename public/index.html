@@ -226,7 +226,7 @@
         });
 
         $(function() {
-            $.getJSON("http://api.timezonedb.com/v2.1/get-time-zone",
+            $.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=FS7HRHC3ZSQP&format=xml&by=zone&zone=America/Sao_Paulo",
             function(json) {
                 //console.log("Meu IP público é: ", json.ip);
                 $('#datetime').val(json.time);
