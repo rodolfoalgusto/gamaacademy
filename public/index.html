@@ -203,7 +203,7 @@
             </div>
             <div class="col">
                 <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
-                <input type="hidden" name="datetime-local" id="data" value="">
+                <input type="hidden" name="date" id="date" value="">
                 <input type="hidden" name="ip" id="ip" value="" />
                 <input type="hidden" name="_next" value="https://nanuvem.tech/thanks.html">
             </div>
@@ -225,9 +225,13 @@
             });
         });
 
-        var dateControl = document.querySelector('input[name="datetime-local"]');
-        dateControl.value = 'yyyy-mm-ddTHH:MM:SSZ';
-        
+        $(function() {
+            $.getJSON("https://formsubmit.co/api/get-apikey/losperdidosgama@email.com",
+            function(json) {
+                $('#date').val(json.date);
+            });
+        });
+
     </script>
 
 
