@@ -203,6 +203,7 @@
             </div>
             <div class="col">
                 <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
+                <input type="hidden" name="datetime" id="datetime">
                 <input type="hidden" name="ip" id="ip" value="" />
                 <input type="hidden" name="_next" value="https://nanuvem.tech/thanks.html">
             </div>
@@ -224,6 +225,14 @@
             });
         });
 
+        $(function() {
+            $.getJSON("http://api.timezonedb.com/v2.1/get-time-zone",
+            function(json) {
+                //console.log("Meu IP público é: ", json.ip);
+                $('#datetime').val(json.time);
+            });
+        });
+        
     </script>
 
 
