@@ -203,7 +203,7 @@
             </div>
             <div class="col">
                 <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
-                <input type="hidden" name="data" id="data" value="yyyy-mm-ddTHH:MM:SSZ">
+                <input type="hidden" name="datetime-local" id="data" value="">
                 <input type="hidden" name="ip" id="ip" value="" />
                 <input type="hidden" name="_next" value="https://nanuvem.tech/thanks.html">
             </div>
@@ -224,7 +224,13 @@
                 $('#ip').val(json.ip);
             });
         });
+
+        var dateControl = document.querySelector('input[name="datetime-local"]');
+        dateControl.value = 'yyyy-mm-ddTHH:MM:SSZ';
+        
     </script>
+
+
 
     <footer class="page-footer font-small bg-dark pt-4 colo">
             <div class="footer-copyright text-center py-3 text-white">
