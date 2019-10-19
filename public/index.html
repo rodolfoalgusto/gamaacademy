@@ -169,8 +169,7 @@
                                     <a href="./post-card02-scrum.html" class="btn-style">Ler mais</a>
                                 </div>
                         </div>
-                </div>
-                
+                </div>    
             </div>
 
             <div class="col-lg-4">
@@ -191,33 +190,66 @@
         </div>
     </div>
 
+    <!-- Cards 02 -->
+    <div class="cards">
+        <div class="row text-left">
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="card-img-top" src="./img/postagem-card04-app.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Desenvolvimento de aplicativos mobile: como fazer um app leve e off-line?</h4>
+                            <p class="card-text">Construir um aplicativo é muito mais do que apenas ter uma ideia inovadora.
+                                Como criar uma solução que se torne indispensável..</p>
+                                <div class="card-footer">
+                                    <a href="./post-card04-app.html" class="btn-style">Ler mais</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <img class="card-img-top" src="./img/postagem-card05-nuvem.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">A vez da nuvem híbrida</h4>
+                            <p class="card-text">A adesão aos serviços em cloud por empresas de diferentes portes nos últimos anos, 
+                                tem crescido exponencialmente no mercado corporativo. Os benefícios que ela proporciona para..</p>
+                                <div class="card-footer">
+                                    <a href="./post-card05-nuvem.html" class="btn-style">Ler mais</a>
+                                </div>
+                        </div>
+                </div>    
+            </div>
+        </div>    
+    </div>        
+    
+
     <br>
     
     <!-- Form -->
     
     <section class="text-form">
-        <h5>Se inscreva e receba conteúdos exclusivos!</h5>  
-        <br>
-        <form action="https://formsubmit.co/losperdidosgama@gmail.com" method="POST">
-            <div class="form-row">
-            <div class="col">
-                <input type="name" class="form-control" name="name" placeholder="Nome completo">
-            </div>
-            <div class="col">
-                <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
-                <!-- <input type="hidden" name="datetime" id="datetime" value=""> -->
-                <input type="hidden" name="ip" id="ip" value="" />
-                <input type="hidden" name="_next" value="https://nanuvem.tech/thanks.html">
-            </div>
-            <button class="btn-style" type="submit">Enviar</button>
-            </div>
-        </form>
+            <h5>Se inscreva e receba conteúdos exclusivos!</h5>  
+            <br>
+            <form action="https://formsubmit.co/losperdidosgama@gmail.com" method="POST">
+                <div class="form-row">
+                <div class="col">
+                    <input type="name" class="form-control" name="name" placeholder="Nome completo">
+                </div>
+                <div class="col">
+                    <input id="email" type="email" class="form-control" name="email" placeholder="Seu e-mail">
+                    <input type="hidden" name="ip" id="ip" value="" />
+                    <input type="hidden" name="_next" value="https://nanuvem.tech/thanks.html">
+                </div>
+                <button class="btn-style" type="submit">Enviar</button>
+                </div>
+            </form>
     </section>
 
     <br>
     <br>
+    <br>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         $(function() {
             $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
@@ -226,30 +258,18 @@
                 $('#ip').val(json.ip);
             });
         });
-
-        // $(function() {
-        //     $.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=FS7HRHC3ZSQP&format=xml&by=zone&zone=America/Sao_Paulo",
-        //     function(json) {
-        //         //console.log("Meu IP público é: ", json.ip);
-        //         $('#datetime').val(json.time);
-        //     });
-        // });
-        
     </script>
-
-
-
-    <footer class="page-footer font-small bg-dark pt-4 colo">
-            <div class="footer-copyright text-center py-3 text-white">
-                <p class="p-footer">©2019 Copyright</p>
-            </div>      
     
-        <!-- <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-
-    </footer>
+  <footer class="page-footer font-small bg-dark pt-4 colo">
+        <div class="footer-copyright text-center py-3 text-white">
+            <p class="p-footer">©2019 Copyright</p>
+        </div>      
+</footer>
     
     <script src="https://my.hellobar.com/b7fe2b8542f3c8df42cb293e97ae614177080c78.js" type="text/javascript" charset="utf-8" async="async"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     
 </body>
 </html>
